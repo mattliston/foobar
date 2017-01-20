@@ -1,5 +1,3 @@
-import psyco
-pysco.full()
 def answer(n):
     limit = 104730
     not_prime = set()
