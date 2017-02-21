@@ -47,8 +47,12 @@ def n2b(n,b):
     while n:
         d.append(int(n%b))
         n/=b
-    return ''.join(map(str,d[::-1]))
-
+    foo = ''.join(map(str,d[::-1]))
+    if len(foo)<len(str(n)):
+        foo=foo.zfill(len(str(n))-len(foo))
+    else:
+        return foo
+    return foo
 
 #print n2b(15,3)        
 
