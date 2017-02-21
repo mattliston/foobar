@@ -72,7 +72,7 @@ def answer(n,b):
 #        n_descending = int(n_d)
 #        print 'n ', n
 #        print n2b(n_d-n_a,b)
-        if (n2b((n_d-n_a),b)==int(n)):
+        if (n_d==n_a):
             return 1
         elif (n2b((n_d-n_a),b) in sequence_dict):
             return count-sequence_dict[n2b((n_d-n_a),b)]+1
