@@ -79,10 +79,9 @@ def answer(n,b):
         else:
             sequence_dict[n] = count
             x=n2b(n_d-n_a,b)
-            n=str(x)
+            n=str(x).zfill(len(n))
             count+=1
 
-print answer('1211',10)
-print answer('210022',3)
-        
-
+#print answer('1211',10)
+#print answer('210022',3)
+print answer('90',10)
